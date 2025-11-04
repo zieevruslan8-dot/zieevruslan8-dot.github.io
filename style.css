@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: #764ba2;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #764ba2;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background: #764ba2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #444;
+    border-bottom: 2px solid #764ba2;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+.intro {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.features {
+    margin: 25px 0;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+section {
+    margin: 30px 0;
+    padding: 25px;
+    background: rgba(118, 75, 162, 0.05);
+    border-radius: 15px;
+    border-left: 4px solid #764ba2;
+}
+
+.skill-bar {
+    margin: 20px 0;
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    animation: fillBar 2s ease-in-out;
+}
+
+.html-css { width: 85%; }
+.js { width: 70%; }
+.responsive { width: 75%; }
+
+@keyframes fillBar {
+    from { width: 0%; }
+}
+
+.cool-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 30px auto;
+    font-weight: bold;
+}
+
+.cool-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #764ba2;
+    min-height: 25px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .main-nav {
+        gap: 10px;
+    }
+    
+    .main-nav a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
